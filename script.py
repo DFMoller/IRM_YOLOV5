@@ -46,10 +46,24 @@ with open('groceries_unity/Dataset731f0111-624c-429a-ac6a-d5b5bb43f3ed/metric_de
                 }
                 outdata['categories'].append(category_instance)
 
-# fetch labels
+captures_batches = []
+
+# fetch first captures file
 with open('groceries_unity/Dataset731f0111-624c-429a-ac6a-d5b5bb43f3ed/captures_000.json') as json_file:
     data = json.load(json_file)
-    captures = data['captures']
+    captures_instance = data['captures']
+    captures_batches.append(captures_instance)
+
+# fetch second captures file
+with open('groceries_unity/Dataset731f0111-624c-429a-ac6a-d5b5bb43f3ed/captures_001.json') as json_file:
+    data = json.load(json_file)
+    captures_instance = data['captures']
+    captures_batches.append(captures_instance)
+
+log = {}
+num_files_with_annotations = 0
+
+for captures in captures_batches:
 
     for capture in captures:
         
@@ -61,6 +75,8 @@ with open('groceries_unity/Dataset731f0111-624c-429a-ac6a-d5b5bb43f3ed/captures_
             print("FILE NAME: " + filename)
         except KeyError as err:
             print('Dictionary key not found! ---> ' + err)
+            log['dictionary_not_found'] = []
+            log['dictionary_not_found'].append(filename)
             continue
 
         # get image size and date created
@@ -82,8 +98,10 @@ with open('groceries_unity/Dataset731f0111-624c-429a-ac6a-d5b5bb43f3ed/captures_
 
         if len(values) > 0:
 
+            num_files_with_annotations += 1
+
             for box in values:
-                print(box['label_name'])
+                # print(box['label_name'])
 
                 # add annotation data to output
                 annotation_instance = {
@@ -96,10 +114,21 @@ with open('groceries_unity/Dataset731f0111-624c-429a-ac6a-d5b5bb43f3ed/captures_
                     "bbox": [box['x'], box['y'], box['width'], box['height']]
                 }
                 outdata['annotations'].append(annotation_instance)
+        
+        else:
+            log['no_annotations'] = []
+            log['no_annotations'].append(filename)
+            
 
+log['files_with_annotations'] = []
+log['files_with_annotations'].append(num_files_with_annotations)
 
 with open('groceries_unity/RGB80994f29-b2a1-4884-9bbe-c563698a76d3/output.json', 'w') as outfile:
     json.dump(outdata, outfile)
+
+# Used for debugging
+with open('log.json', 'w') as logfile:
+    json.dump(log, logfile)
 
         
 
