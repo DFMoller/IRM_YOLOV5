@@ -1,0 +1,717 @@
+{
+  "version": "0.0.1",
+  "metric_definitions": [
+    {
+      "id": "db1b258e-d1d0-41b6-8751-16f601a2e230",
+      "name": "scenario_iteration",
+      "description": "Iteration information for dataset sequences"
+    },
+    {
+      "id": "14adb394-46c0-47e8-a3f0-99e754483b76",
+      "name": "random-seed",
+      "description": "The random seed used to initialize the random state of the simulation. Only triggered once per simulation."
+    },
+    {
+      "id": "51da3c27-369d-4929-aea6-d01614635ce2",
+      "name": "object count",
+      "description": "Counts of objects for each label in the sensor's view",
+      "spec": [
+        {
+          "label_id": 1,
+          "label_name": "apple"
+        },
+        {
+          "label_id": 2,
+          "label_name": "tuna_fish_can"
+        },
+        {
+          "label_id": 3,
+          "label_name": "tomato_soup_can"
+        },
+        {
+          "label_id": 4,
+          "label_name": "sugar_box"
+        },
+        {
+          "label_id": 5,
+          "label_name": "strawberry"
+        },
+        {
+          "label_id": 6,
+          "label_name": "pudding_box"
+        },
+        {
+          "label_id": 7,
+          "label_name": "potted_meat_can"
+        },
+        {
+          "label_id": 8,
+          "label_name": "plum"
+        },
+        {
+          "label_id": 9,
+          "label_name": "pear"
+        },
+        {
+          "label_id": 10,
+          "label_name": "peach"
+        },
+        {
+          "label_id": 11,
+          "label_name": "orange"
+        },
+        {
+          "label_id": 12,
+          "label_name": "mustard_bottle"
+        },
+        {
+          "label_id": 13,
+          "label_name": "lemon"
+        },
+        {
+          "label_id": 14,
+          "label_name": "master_chef_can"
+        },
+        {
+          "label_id": 15,
+          "label_name": "gelatin_box"
+        },
+        {
+          "label_id": 16,
+          "label_name": "cracker_box"
+        },
+        {
+          "label_id": 17,
+          "label_name": "chips_can_berkely_meshes"
+        },
+        {
+          "label_id": 18,
+          "label_name": "banana"
+        },
+        {
+          "label_id": 19,
+          "label_name": "windex_bottle"
+        },
+        {
+          "label_id": 20,
+          "label_name": "spoon"
+        },
+        {
+          "label_id": 21,
+          "label_name": "sponge"
+        },
+        {
+          "label_id": 22,
+          "label_name": "spatula"
+        },
+        {
+          "label_id": 23,
+          "label_name": "skillet"
+        },
+        {
+          "label_id": 24,
+          "label_name": "plate"
+        },
+        {
+          "label_id": 25,
+          "label_name": "pitcher_base"
+        },
+        {
+          "label_id": 26,
+          "label_name": "mug"
+        },
+        {
+          "label_id": 27,
+          "label_name": "knife"
+        },
+        {
+          "label_id": 28,
+          "label_name": "fork"
+        },
+        {
+          "label_id": 29,
+          "label_name": "bowl"
+        },
+        {
+          "label_id": 30,
+          "label_name": "bleach_cleanser"
+        },
+        {
+          "label_id": 31,
+          "label_name": "adjustable_wrench"
+        },
+        {
+          "label_id": 32,
+          "label_name": "woodblock"
+        },
+        {
+          "label_id": 33,
+          "label_name": "tennis_ball"
+        },
+        {
+          "label_id": 34,
+          "label_name": "softball"
+        },
+        {
+          "label_id": 35,
+          "label_name": "small_marker"
+        },
+        {
+          "label_id": 36,
+          "label_name": "small_clamp"
+        },
+        {
+          "label_id": 37,
+          "label_name": "racquetball"
+        },
+        {
+          "label_id": 38,
+          "label_name": "powerdrill"
+        },
+        {
+          "label_id": 39,
+          "label_name": "phillips_screwdriver"
+        },
+        {
+          "label_id": 40,
+          "label_name": "padlock"
+        },
+        {
+          "label_id": 41,
+          "label_name": "mini_soccer_ball"
+        },
+        {
+          "label_id": 42,
+          "label_name": "medium_clamp"
+        },
+        {
+          "label_id": 43,
+          "label_name": "large_marker"
+        },
+        {
+          "label_id": 44,
+          "label_name": "large_clamp"
+        },
+        {
+          "label_id": 45,
+          "label_name": "hammer"
+        },
+        {
+          "label_id": 46,
+          "label_name": "golf_ball"
+        },
+        {
+          "label_id": 47,
+          "label_name": "flat_screwdriver"
+        },
+        {
+          "label_id": 48,
+          "label_name": "extra_large_clamp"
+        },
+        {
+          "label_id": 49,
+          "label_name": "baseball"
+        },
+        {
+          "label_id": 50,
+          "label_name": "rubiks_cube"
+        },
+        {
+          "label_id": 51,
+          "label_name": "timer"
+        },
+        {
+          "label_id": 52,
+          "label_name": "nine_hole_peg_test"
+        },
+        {
+          "label_id": 53,
+          "label_name": "m_lego_duplo"
+        },
+        {
+          "label_id": 54,
+          "label_name": "l_lego_duplo"
+        },
+        {
+          "label_id": 55,
+          "label_name": "k_toy_airplane"
+        },
+        {
+          "label_id": 56,
+          "label_name": "k_lego_duplo"
+        },
+        {
+          "label_id": 57,
+          "label_name": "j_lego_duplo"
+        },
+        {
+          "label_id": 58,
+          "label_name": "j_cups"
+        },
+        {
+          "label_id": 59,
+          "label_name": "i_lego_duplo"
+        },
+        {
+          "label_id": 60,
+          "label_name": "i_cups"
+        },
+        {
+          "label_id": 61,
+          "label_name": "h_toy_airplane"
+        },
+        {
+          "label_id": 62,
+          "label_name": "h_lego_duplo"
+        },
+        {
+          "label_id": 63,
+          "label_name": "h_cups"
+        },
+        {
+          "label_id": 64,
+          "label_name": "g_lego_duplo"
+        },
+        {
+          "label_id": 65,
+          "label_name": "g_cups"
+        },
+        {
+          "label_id": 66,
+          "label_name": "foam_brick"
+        },
+        {
+          "label_id": 67,
+          "label_name": "f_lego_duplo"
+        },
+        {
+          "label_id": 68,
+          "label_name": "f_cups"
+        },
+        {
+          "label_id": 69,
+          "label_name": "e_toy_airplane"
+        },
+        {
+          "label_id": 70,
+          "label_name": "e_lego_duplo"
+        },
+        {
+          "label_id": 71,
+          "label_name": "e_cups"
+        },
+        {
+          "label_id": 72,
+          "label_name": "dice"
+        },
+        {
+          "label_id": 73,
+          "label_name": "d_lego_duplo"
+        },
+        {
+          "label_id": 74,
+          "label_name": "d_cups"
+        },
+        {
+          "label_id": 75,
+          "label_name": "chain"
+        },
+        {
+          "label_id": 76,
+          "label_name": "c_toy_airplane"
+        },
+        {
+          "label_id": 77,
+          "label_name": "c_lego_duplo"
+        },
+        {
+          "label_id": 78,
+          "label_name": "c_cups"
+        },
+        {
+          "label_id": 79,
+          "label_name": "b_toy_airplane"
+        },
+        {
+          "label_id": 80,
+          "label_name": "b_lego_duplo"
+        },
+        {
+          "label_id": 81,
+          "label_name": "b_cups"
+        },
+        {
+          "label_id": 82,
+          "label_name": "a_toy_airplane"
+        },
+        {
+          "label_id": 83,
+          "label_name": "a_marbles"
+        },
+        {
+          "label_id": 84,
+          "label_name": "a_lego_duplo"
+        },
+        {
+          "label_id": 85,
+          "label_name": "a_cups"
+        },
+        {
+          "label_id": 86,
+          "label_name": "a_colored_wood_blocks"
+        }
+      ]
+    },
+    {
+      "id": "5ba92024-b3b7-41a7-9d3f-c03a6a8ddd01",
+      "name": "rendered object info",
+      "description": "Information about each labeled object visible to the sensor",
+      "spec": [
+        {
+          "label_id": 1,
+          "label_name": "apple"
+        },
+        {
+          "label_id": 2,
+          "label_name": "tuna_fish_can"
+        },
+        {
+          "label_id": 3,
+          "label_name": "tomato_soup_can"
+        },
+        {
+          "label_id": 4,
+          "label_name": "sugar_box"
+        },
+        {
+          "label_id": 5,
+          "label_name": "strawberry"
+        },
+        {
+          "label_id": 6,
+          "label_name": "pudding_box"
+        },
+        {
+          "label_id": 7,
+          "label_name": "potted_meat_can"
+        },
+        {
+          "label_id": 8,
+          "label_name": "plum"
+        },
+        {
+          "label_id": 9,
+          "label_name": "pear"
+        },
+        {
+          "label_id": 10,
+          "label_name": "peach"
+        },
+        {
+          "label_id": 11,
+          "label_name": "orange"
+        },
+        {
+          "label_id": 12,
+          "label_name": "mustard_bottle"
+        },
+        {
+          "label_id": 13,
+          "label_name": "lemon"
+        },
+        {
+          "label_id": 14,
+          "label_name": "master_chef_can"
+        },
+        {
+          "label_id": 15,
+          "label_name": "gelatin_box"
+        },
+        {
+          "label_id": 16,
+          "label_name": "cracker_box"
+        },
+        {
+          "label_id": 17,
+          "label_name": "chips_can_berkely_meshes"
+        },
+        {
+          "label_id": 18,
+          "label_name": "banana"
+        },
+        {
+          "label_id": 19,
+          "label_name": "windex_bottle"
+        },
+        {
+          "label_id": 20,
+          "label_name": "spoon"
+        },
+        {
+          "label_id": 21,
+          "label_name": "sponge"
+        },
+        {
+          "label_id": 22,
+          "label_name": "spatula"
+        },
+        {
+          "label_id": 23,
+          "label_name": "skillet"
+        },
+        {
+          "label_id": 24,
+          "label_name": "plate"
+        },
+        {
+          "label_id": 25,
+          "label_name": "pitcher_base"
+        },
+        {
+          "label_id": 26,
+          "label_name": "mug"
+        },
+        {
+          "label_id": 27,
+          "label_name": "knife"
+        },
+        {
+          "label_id": 28,
+          "label_name": "fork"
+        },
+        {
+          "label_id": 29,
+          "label_name": "bowl"
+        },
+        {
+          "label_id": 30,
+          "label_name": "bleach_cleanser"
+        },
+        {
+          "label_id": 31,
+          "label_name": "adjustable_wrench"
+        },
+        {
+          "label_id": 32,
+          "label_name": "woodblock"
+        },
+        {
+          "label_id": 33,
+          "label_name": "tennis_ball"
+        },
+        {
+          "label_id": 34,
+          "label_name": "softball"
+        },
+        {
+          "label_id": 35,
+          "label_name": "small_marker"
+        },
+        {
+          "label_id": 36,
+          "label_name": "small_clamp"
+        },
+        {
+          "label_id": 37,
+          "label_name": "racquetball"
+        },
+        {
+          "label_id": 38,
+          "label_name": "powerdrill"
+        },
+        {
+          "label_id": 39,
+          "label_name": "phillips_screwdriver"
+        },
+        {
+          "label_id": 40,
+          "label_name": "padlock"
+        },
+        {
+          "label_id": 41,
+          "label_name": "mini_soccer_ball"
+        },
+        {
+          "label_id": 42,
+          "label_name": "medium_clamp"
+        },
+        {
+          "label_id": 43,
+          "label_name": "large_marker"
+        },
+        {
+          "label_id": 44,
+          "label_name": "large_clamp"
+        },
+        {
+          "label_id": 45,
+          "label_name": "hammer"
+        },
+        {
+          "label_id": 46,
+          "label_name": "golf_ball"
+        },
+        {
+          "label_id": 47,
+          "label_name": "flat_screwdriver"
+        },
+        {
+          "label_id": 48,
+          "label_name": "extra_large_clamp"
+        },
+        {
+          "label_id": 49,
+          "label_name": "baseball"
+        },
+        {
+          "label_id": 50,
+          "label_name": "rubiks_cube"
+        },
+        {
+          "label_id": 51,
+          "label_name": "timer"
+        },
+        {
+          "label_id": 52,
+          "label_name": "nine_hole_peg_test"
+        },
+        {
+          "label_id": 53,
+          "label_name": "m_lego_duplo"
+        },
+        {
+          "label_id": 54,
+          "label_name": "l_lego_duplo"
+        },
+        {
+          "label_id": 55,
+          "label_name": "k_toy_airplane"
+        },
+        {
+          "label_id": 56,
+          "label_name": "k_lego_duplo"
+        },
+        {
+          "label_id": 57,
+          "label_name": "j_lego_duplo"
+        },
+        {
+          "label_id": 58,
+          "label_name": "j_cups"
+        },
+        {
+          "label_id": 59,
+          "label_name": "i_lego_duplo"
+        },
+        {
+          "label_id": 60,
+          "label_name": "i_cups"
+        },
+        {
+          "label_id": 61,
+          "label_name": "h_toy_airplane"
+        },
+        {
+          "label_id": 62,
+          "label_name": "h_lego_duplo"
+        },
+        {
+          "label_id": 63,
+          "label_name": "h_cups"
+        },
+        {
+          "label_id": 64,
+          "label_name": "g_lego_duplo"
+        },
+        {
+          "label_id": 65,
+          "label_name": "g_cups"
+        },
+        {
+          "label_id": 66,
+          "label_name": "foam_brick"
+        },
+        {
+          "label_id": 67,
+          "label_name": "f_lego_duplo"
+        },
+        {
+          "label_id": 68,
+          "label_name": "f_cups"
+        },
+        {
+          "label_id": 69,
+          "label_name": "e_toy_airplane"
+        },
+        {
+          "label_id": 70,
+          "label_name": "e_lego_duplo"
+        },
+        {
+          "label_id": 71,
+          "label_name": "e_cups"
+        },
+        {
+          "label_id": 72,
+          "label_name": "dice"
+        },
+        {
+          "label_id": 73,
+          "label_name": "d_lego_duplo"
+        },
+        {
+          "label_id": 74,
+          "label_name": "d_cups"
+        },
+        {
+          "label_id": 75,
+          "label_name": "chain"
+        },
+        {
+          "label_id": 76,
+          "label_name": "c_toy_airplane"
+        },
+        {
+          "label_id": 77,
+          "label_name": "c_lego_duplo"
+        },
+        {
+          "label_id": 78,
+          "label_name": "c_cups"
+        },
+        {
+          "label_id": 79,
+          "label_name": "b_toy_airplane"
+        },
+        {
+          "label_id": 80,
+          "label_name": "b_lego_duplo"
+        },
+        {
+          "label_id": 81,
+          "label_name": "b_cups"
+        },
+        {
+          "label_id": 82,
+          "label_name": "a_toy_airplane"
+        },
+        {
+          "label_id": 83,
+          "label_name": "a_marbles"
+        },
+        {
+          "label_id": 84,
+          "label_name": "a_lego_duplo"
+        },
+        {
+          "label_id": 85,
+          "label_name": "a_cups"
+        },
+        {
+          "label_id": 86,
+          "label_name": "a_colored_wood_blocks"
+        }
+      ]
+    }
+  ]
+}

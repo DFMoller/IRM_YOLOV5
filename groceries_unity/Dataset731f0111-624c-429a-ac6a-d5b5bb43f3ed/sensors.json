@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "sensors": [
+    {
+      "id": "d02496c1-a5c9-41fc-8d3e-eaea17fe23fa",
+      "ego_id": "3b760b28-b114-4bcc-8d31-da55478586a7",
+      "modality": "camera",
+      "description": "MyPerception Camera"
+    }
+  ]
+}
