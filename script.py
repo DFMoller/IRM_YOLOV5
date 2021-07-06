@@ -5,6 +5,11 @@ from PIL import Image
 from datetime import date
 
 
+#########################################################################
+#################### DEFINE COCO JSON STRUCTURE #########################
+#########################################################################
+
+
 outdata = {
     "info": {
         "year": "2021",
@@ -32,7 +37,12 @@ outdata = {
     ]
 }
 
-# fetch categories
+
+#########################################################################
+################## FETCH THE METRIC DEFINITIONS FILE ####################
+#########################################################################
+
+
 with open('groceries_unity/Dataset731f0111-624c-429a-ac6a-d5b5bb43f3ed/metric_definitions.json') as categories_json_file:
     categories_data = json.load(categories_json_file)
     for x in categories_data['metric_definitions']:
@@ -45,6 +55,13 @@ with open('groceries_unity/Dataset731f0111-624c-429a-ac6a-d5b5bb43f3ed/metric_de
                     "supercategory": "groceries"
                 }
                 outdata['categories'].append(category_instance)
+
+
+#########################################################################
+#################### FETCH THE CAPTURES FILES ###########################
+#########################################################################
+
+# Add a "with open" block for every "captures-" file and add to "captures_batches"
 
 captures_batches = []
 
@@ -60,6 +77,13 @@ with open('groceries_unity/Dataset731f0111-624c-429a-ac6a-d5b5bb43f3ed/captures_
     captures_instance = data['captures']
     captures_batches.append(captures_instance)
 
+
+#########################################################################
+#################### EXTRACT RELEVANT INFORMATION #######################
+#########################################################################
+
+
+# Initialize logging variables
 log = {}
 num_files_with_annotations = 0
 
@@ -122,6 +146,12 @@ for captures in captures_batches:
 
 log['files_with_annotations'] = []
 log['files_with_annotations'].append(num_files_with_annotations)
+
+
+#########################################################################
+################### WRITE THE NECCESSARY OUTPUT #########################
+#########################################################################
+
 
 with open('groceries_unity/RGB80994f29-b2a1-4884-9bbe-c563698a76d3/output.json', 'w') as outfile:
     json.dump(outdata, outfile)
