@@ -24,7 +24,7 @@ Finally, the "outdata" dictionary is written to an output.json file in the "RGB-
 ## log.json
 This can be used in whatever way required to display debugging data and does not affect anything else.
 
-## Things to consider when using script.py with a new data set from Unity
+# Things to consider when using script.py with a new data set from Unity
 ### Folder Names
 The "Dataset-" and "RGB-" folders will have new names every time. Update the names in the script.
 ### Number of "captures-" files
